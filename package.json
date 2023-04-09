@@ -1,6 +1,6 @@
 {
   "name": "@CatGrandi/SMUTokens",
-  "version": "v0.0.0",
+  "version": "v1.0.0",
   "main": "index.js",
   "repository": "git@github.com:CatGrandi/SMUTokens.git",
   "dependencies": {
