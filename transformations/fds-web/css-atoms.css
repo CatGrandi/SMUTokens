@@ -1,0 +1,514 @@
+[style~="--pry-alignment-center:"],
+[style~="--pry-alignment-center-center:"] {
+  --ai-h: center;
+  --jc-h: center;
+  --ai-v: center;
+  --jc-v: center;
+}
+[style~="--pry-alignment-center-left:"],
+[style~="--pry-alignment-left-center:"] {
+  --ai-h: center;
+  --jc-h: flex-start;
+  --ai-v: flex-start;
+  --jc-v: center;
+}
+[style~="--pry-alignment-center-right:"],
+[style~="--pry-alignment-right-center:"] {
+  --ai-h: center;
+  --jc-h: flex-end;
+  --ai-v: flex-end;
+  --jc-v: center;
+}
+[style~="--pry-alignment-top:"],
+[style~="--pry-alignment-top-left:"],
+[style~="--pry-alignment-left-top:"],
+[style~="--pry-alignment-left:"] {
+  --ai-h: flex-start;
+  --jc-h: flex-start;
+  --ai-v: flex-start;
+  --jc-v: flex-start;
+}
+[style~="--pry-alignment-top-center:"],
+[style~="--pry-alignment-center-top:"] {
+  --ai-h: flex-start;
+  --jc-h: center;
+  --ai-v: center;
+  --jc-v: flex-start;
+}
+[style~="--pry-alignment-top-right:"],
+[style~="--pry-alignment-right-top:"],
+[style~="--pry-alignment-right:"] {
+  --ai-h: flex-start;
+  --jc-h: flex-end;
+  --ai-v: flex-end;
+  --jc-v: flex-start;
+}
+[style~="--pry-alignment-bottom-left:"],
+[style~="--pry-alignment-left-bottom:"],
+[style~="--pry-alignment-bottom:"] {
+  --ai-h: flex-end;
+  --jc-h: flex-start;
+  --ai-v: flex-start;
+  --jc-v: flex-end;
+}
+[style~="--pry-alignment-bottom-center:"],
+[style~="--pry-alignment-center-bottom:"] {
+  --ai-h: flex-end;
+  --jc-h: center;
+  --ai-v: center;
+  --jc-v: flex-end;
+}
+[style~="--pry-alignment-bottom-right:"],
+[style~="--pry-alignment-right-bottom:"] {
+  --ai-h: flex-end;
+  --jc-h: flex-end;
+  --ai-v: flex-end;
+  --jc-v: flex-end;
+}
+[style~="--pry-alignment-stretch:"],
+[style~="--pry-alignment-stretch-left:"],
+[style~="--pry-alignment-left-stretch:"],
+[style~="--pry-alignment-stretch-top:"],
+[style~="--pry-alignment-top-stretch:"] {
+  --ai-h: stretch;
+  --jc-h: flex-start;
+  --ai-v: stretch;
+  --jc-v: flex-start;
+}
+[style~="--pry-alignment-stretch-right:"],
+[style~="--pry-alignment-right-stretch:"],
+[style~="--pry-alignment-stretch-bottom:"],
+[style~="--pry-alignment-bottom-stretch:"] {
+  --ai-h: stretch;
+  --jc-h: flex-end;
+  --ai-v: stretch;
+  --jc-v: flex-end;
+}
+[style~="--pry-alignment-stretch-center:"],
+[style~="--pry-alignment-center-stretch:"] {
+  --ai-h: stretch;
+  --jc-h: center;
+  --ai-v: stretch;
+  --jc-v: center;
+}
+[style~="--pry-baseline:"],
+[style~="--pry-alignment-baseline-left:"],
+[style~="--pry-alignment-left-baseline:"] {
+  --ai-h: baseline;
+  --jc-h: flex-start;
+  --ai-v: flex-start;
+  --jc-v: flex-start;
+}
+[style~="--pry-alignment-baseline-right:"],
+[style~="--pry-alignment-right-baseline:"] {
+  --ai-h: baseline;
+  --jc-h: flex-start;
+  --ai-v: flex-start;
+  --jc-v: flex-start;
+}
+[style~="--pry-alignment-baseline-center:"],
+[style~="--pry-alignment-center-baseline:"] {
+  --ai-h: baseline;
+  --jc-h: center;
+  --ai-v: center;
+  --jc-v: flex-start;
+}
+[style~="--pry-background-color:"] {
+  --background-color: var( --pry-background-color );
+  background-color: var( --background-color );
+}
+[style~="--pry-background-color-hover:"]:hover {
+  background-color: var( --pry-background-color-hover );
+}
+[style~="--pry-color:"] {
+  --color: var( --pry-color );
+  color: var( --color );
+}
+[style~="--pry-color-hover:"]:hover {
+  color: var( --pry-color-hover );
+}
+[style~="--pry-border-color:"] {
+  border-color: var( --pry-border-color );
+}
+[style~="--pry-border:"] {
+  border: 1px solid var( --pry-border );
+}
+[style~="--pry-border-top:"] {
+  border-top: 1px solid var( --pry-border-top );
+}
+[style~="--pry-border-bottom:"] {
+  border-bottom: 1px solid var( --pry-border-bottom );
+}
+[style~="--pry-border-left:"] {
+  border-left: 1px solid var( --pry-border-left );
+}
+[style~="--pry-border-right:"] {
+  border-right: 1px solid var( --pry-border-right );
+}
+[style~="--pry-font:"] {
+  font: var( --pry-font );
+}
+pry-element,
+[style~="--pry-element:"] {
+  /* element */
+  position: relative;
+  box-sizing: border-box;
+  --margin-right: initial;
+  --margin-bottom: initial;
+  --gap-h-int: initial;
+  --gap-v-int: initial;
+  margin-right: var( --margin-right, var( --gap-h-int, initial ) );
+  margin-bottom: var( --margin-bottom, var( --gap-v-int, initial ) );
+  display: block;
+}
+pry-layout,
+[style~="--pry-layout:"] {
+  /* element */
+  position: relative;
+  box-sizing: border-box;
+  --margin-right: initial;
+  --margin-bottom: initial;
+  --gap-h-int: initial;
+  --gap-v-int: initial;
+  margin-right: var( --margin-right, var( --gap-h-int, initial ) );
+  margin-bottom: var( --margin-bottom, var( --gap-v-int, initial ) );
+  display: block;
+}
+pry-text,
+[style~="--pry-text:"] {
+  /* element */
+  position: relative;
+  box-sizing: border-box;
+  --margin-right: initial;
+  --margin-bottom: initial;
+  --gap-h-int: initial;
+  --gap-v-int: initial;
+  margin-right: var( --margin-right, var( --gap-h-int, initial ) );
+  margin-bottom: var( --margin-bottom, var( --gap-v-int, initial ) );
+  display: inline-block;
+}
+pry-stack,
+[style~="--pry-stack:"] {
+  /* element */
+  position: relative;
+  box-sizing: border-box;
+  --margin-right: initial;
+  --margin-bottom: initial;
+  --gap-h-int: initial;
+  --gap-v-int: initial;
+  margin-right: var( --margin-right, var( --gap-h-int, initial ) );
+  margin-bottom: var( --margin-bottom, var( --gap-v-int, initial ) );
+  display: block;
+}
+pry-stack > *:nth-child(n),
+[style~="--pry-stack:"] > *:nth-child(n) {
+  --gap-h-int: 0px;
+  --gap-v-int: var( --gap, var( --gap-v, initial ));
+  width: 100%;
+}
+pry-stack > *:last-child,
+[style~="--pry-stack:"] > *:last-child {
+  --gap-v-int: 0px;
+}
+pry-layout,
+[style~="--pry-layout:"] {
+  /* element */
+  position: relative;
+  box-sizing: border-box;
+  --margin-right: initial;
+  --margin-bottom: initial;
+  --gap-h-int: initial;
+  --gap-v-int: initial;
+  margin-right: var( --margin-right, var( --gap-h-int, initial ) );
+  margin-bottom: var( --margin-bottom, var( --gap-v-int, initial ) );
+  display: block;
+}
+pry-layout > *:nth-child(n),
+[style~="--pry-layout:"] > *:nth-child(n) {
+  --gap-h-int: 0px;
+  --gap-v-int: var( --gap, var( --gap-v, initial ));
+  width: 100%;
+}
+pry-layout > *:last-child,
+[style~="--pry-layout:"] > *:last-child {
+  --gap-v-int: 0px;
+}
+pry-flex-h,
+[style~="--pry-flex-h:"] {
+  /* element */
+  position: relative;
+  box-sizing: border-box;
+  --margin-right: initial;
+  --margin-bottom: initial;
+  --gap-h-int: initial;
+  --gap-v-int: initial;
+  margin-right: var( --margin-right, var( --gap-h-int, initial ) );
+  margin-bottom: var( --margin-bottom, var( --gap-v-int, initial ) );
+  /* flex element */
+  position: relative;
+  box-sizing: border-box;
+  --align-items: initial;
+  --justify-content: initial;
+  align-items: var( --align-items , var( --ai-int, flex-start ) );
+  justify-content: var( --justify-content , var( --jc-int, flex-start ) );
+  display: flex;
+  flex-flow: row nowrap;
+  --ai-h: flex-start;
+  --jc-h: flex-start;
+  --ai-int: var( --ai-h, initial );
+  --jc-int: var( --jc-h, initial );
+}
+pry-flex-h > *:nth-child(n),
+[style~="--pry-flex-h:"] > *:nth-child(n) {
+  --gap-h-int: var( --gap , var( --gap-h, initial ));
+  --gap-v-int: 0px;
+}
+pry-flex-h > *:last-child,
+[style~="--pry-flex-h:"] > *:last-child {
+  --gap-h-int: 0px;
+}
+pry-flex-v,
+[style~="--pry-flex-v:"] {
+  /* element */
+  position: relative;
+  box-sizing: border-box;
+  --margin-right: initial;
+  --margin-bottom: initial;
+  --gap-h-int: initial;
+  --gap-v-int: initial;
+  margin-right: var( --margin-right, var( --gap-h-int, initial ) );
+  margin-bottom: var( --margin-bottom, var( --gap-v-int, initial ) );
+  /* flex element */
+  position: relative;
+  box-sizing: border-box;
+  --align-items: initial;
+  --justify-content: initial;
+  align-items: var( --align-items , var( --ai-int, flex-start ) );
+  justify-content: var( --justify-content , var( --jc-int, flex-start ) );
+  display: flex;
+  flex-flow: column nowrap;
+  --ai-v: flex-start;
+  --jc-v: flex-start;
+  --ai-int: var( --ai-v, initial );
+  --jc-int: var( --jc-v, initial );
+}
+pry-flex-v > *:nth-child(n),
+[style~="--pry-flex-v:"] > *:nth-child(n) {
+  --gap-h-int: 0px;
+  --gap-v-int: var( --gap, var( --gap-v, initial ));
+}
+pry-flex-v > *:last-child,
+[style~="--pry-flex-v:"] > *:last-child {
+  --gap-v-int: 0px;
+}
+pry-center,
+[style~="--pry-center:"] {
+  /* element */
+  position: relative;
+  box-sizing: border-box;
+  --margin-right: initial;
+  --margin-bottom: initial;
+  --gap-h-int: initial;
+  --gap-v-int: initial;
+  margin-right: var( --margin-right, var( --gap-h-int, initial ) );
+  margin-bottom: var( --margin-bottom, var( --gap-v-int, initial ) );
+  /* flex element */
+  position: relative;
+  box-sizing: border-box;
+  --align-items: initial;
+  --justify-content: initial;
+  align-items: var( --align-items , var( --ai-int, flex-start ) );
+  justify-content: var( --justify-content , var( --jc-int, flex-start ) );
+  display: flex;
+  flex-flow: column nowrap;
+  --ai-v: center;
+  --jc-v: center;
+  --ai-int: var( --ai-v, initial );
+  --jc-int: var( --jc-v, initial );
+}
+pry-center > *:nth-child(n),
+[style~="--pry-center:"] > *:nth-child(n) {
+  --gap-h-int: 0px;
+  --gap-v-int: var( --gap, var( --gap-v, initial ));
+}
+pry-center > *:last-child,
+[style~="--pry-center:"] > *:last-child {
+  --gap-v-int: 0px;
+}
+pry-float,
+[style~="--pry-float:"] {
+  /* element */
+  position: relative;
+  box-sizing: border-box;
+  --margin-right: initial;
+  --margin-bottom: initial;
+  --gap-h-int: initial;
+  --gap-v-int: initial;
+  margin-right: var( --margin-right, var( --gap-h-int, initial ) );
+  margin-bottom: var( --margin-bottom, var( --gap-v-int, initial ) );
+  display: block;
+}
+pry-float > *:nth-child(n),
+[style~="--pry-float:"] > *:nth-child(n) {
+  --gap-h-int: 0px;
+  --gap-v-int: var( --gap, var( --gap-v, initial ));
+  width: auto;
+  float: left;
+  clear: left;
+}
+pry-float > *:last-child,
+[style~="--pry-float:"] > *:last-child {
+  --gap-v-int: 0px;
+}
+pry-float::after,
+[style~="--pry-float:"]::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+@mixin pry-float-left {
+  float: left;
+}
+@mixin pry-float-right {
+  float: right;
+}
+@mixin pry-float-clear-left {
+  clear: left;
+  float: left;
+}
+@mixin pry-float-clear-right {
+  clear: right;
+  float: right;
+}
+@mixin pry-fill-children {
+  & > * {
+    flex: 1;
+  }
+}
+@mixin pry-children-fill {
+  & > * {
+    flex: 1;
+  }
+}
+@mixin pry-hide {
+  display: none;
+}
+[style~="--pry-size:"] {
+  width: var( --pry-size );
+  height: var( --pry-size );
+}
+[style~="--pry-max-size:"] {
+  max-width: var( --pry-max-size );
+  max-height: var( --pry-max-size );
+}
+[style~="--pry-min-size:"] {
+  min-width: var( --pry-min-size );
+  min-height: var( --pry-min-size );
+}
+[style~="--pry-width:"] {
+  width: var( --pry-width );
+}
+[style~="--pry-max-width:"] {
+  max-width: var( --pry-max-width );
+}
+[style~="--pry-min-width:"] {
+  min-width: var( --pry-min-width );
+}
+[style~="--pry-height:"] {
+  height: var( --pry-height );
+}
+[style~="--pry-max-height:"] {
+  max-height: var( --pry-max-height );
+}
+[style~="--pry-min-height:"] {
+  min-height: var( --pry-min-height );
+}
+[style~="--pry-left:"] {
+  left: var( --pry-left );
+}
+[style~="--pry-right:"] {
+  right: var( --pry-right );
+}
+[style~="--pry-top:"] {
+  top: var( --pry-top );
+}
+[style~="--pry-bottom:"] {
+  bottom: var( --pry-bottom );
+}
+[style~="--pry-margin:"] {
+  margin: var( --pry-margin );
+}
+[style~="--pry-margin-left:"] {
+  margin-left: var( --pry-margin-left );
+}
+[style~="--pry-margin-right:"] {
+  margin-right: var( --pry-margin-right );
+}
+[style~="--pry-margin-top:"] {
+  margin-top: var( --pry-margin-top );
+}
+[style~="--pry-margin-bottom:"] {
+  margin-bottom: var( --pry-margin-bottom );
+}
+[style~="--pry-margin-width:"] {
+  margin-left: var( --pry-margin-width );
+  margin-right: var( --pry-margin-width );
+}
+[style~="--pry-margin-x:"] {
+  margin-left: var( --pry-margin-x );
+  margin-right: var( --pry-margin-x );
+}
+[style~="--pry-margin-height:"] {
+  margin-top: var( --pry-margin-height );
+  margin-bottom: var( --pry-margin-height );
+}
+[style~="--pry-margin-y:"] {
+  margin-top: var( --pry-margin-y );
+  margin-bottom: var( --pry-margin-y );
+}
+[style~="--pry-padding:"] {
+  padding: var( --pry-padding );
+}
+[style~="--pry-padding-left:"] {
+  padding-left: var( --pry-padding-left );
+}
+[style~="--pry-padding-right:"] {
+  padding-right: var( --pry-padding-right );
+}
+[style~="--pry-padding-top:"] {
+  padding-top: var( --pry-padding-top );
+}
+[style~="--pry-padding-bottom:"] {
+  padding-bottom: var( --pry-padding-bottom );
+}
+[style~="--pry-padding-width:"] {
+  padding-left: var( --pry-padding-width );
+  padding-right: var( --pry-padding-width );
+}
+[style~="--pry-padding-x:"] {
+  padding-left: var( --pry-padding-x );
+  padding-right: var( --pry-padding-x );
+}
+[style~="--pry-padding-height:"] {
+  padding-top: var( --pry-padding-height );
+  padding-bottom: var( --pry-padding-height );
+}
+[style~="--pry-padding-y:"] {
+  padding-top: var( --pry-padding-y );
+  padding-bottom: var( --pry-padding-y );
+}
+[style~="--pry-border-radius:"] {
+  border-radius: var( --pry-border-radius );
+}
+[style~="--pry-gap:"] > * {
+  --gap: var( --pry-gap );
+}
+[style~="--pry-fill:"] {
+  flex: var( --pry-fill );
+}
+[style~="--pry-shadow:"] {
+  box-shadow: var( --pry-shadow )
+}
+[style~="--pry-blur:"] {
+  filter: blur(var( --pry-blur ))
+}
