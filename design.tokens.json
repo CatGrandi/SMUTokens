@@ -1,0 +1,157 @@
+{
+  "$description": "Peerly | SMU (PRY) Design Tokens",
+  "PRY": {
+    "$extensions": {
+      "dsys.level": "sheet",
+      "dsys.prefix": "PRY",
+      "dsys.fullName": "Peerly | SMU"
+    },
+    "color": {
+      "$extensions": {
+        "dsys.level": "group",
+        "dsys.type": "ColorSet",
+        "dsys.nodeIds": []
+      },
+      "$description": "All the color tokens",
+      "primary": {
+        "$extensions": {
+          "dsys.level": "tokenset",
+          "dsys.type": "ColorSet",
+          "dsys.name": "Primary",
+          "dsys.nodeId": "114:49680"
+        },
+        "$description": "Primary color tokens",
+        "Primary-100": {
+          "$extensions": {
+            "dsys.level": "token",
+            "dsys.name": "Primary-100",
+            "dsys.index": 0,
+            "dsys.styleId": "S:bb42b572b4aa3054734e75a9c23977eaff3eba7c,"
+          },
+          "$value": {
+            "hex": "#000b5c",
+            "alpha": 1
+          },
+          "$type": "color"
+        },
+        "Primary-200": {
+          "$extensions": {
+            "dsys.level": "token",
+            "dsys.name": "Primary-200",
+            "dsys.index": 1,
+            "dsys.styleId": "S:e9bbf82a900d72b53046976e0dbe9c4c01443dd1,"
+          },
+          "$value": {
+            "hex": "#101d80",
+            "alpha": 1
+          },
+          "$type": "color"
+        },
+        "Primary-300": {
+          "$extensions": {
+            "dsys.level": "token",
+            "dsys.name": "Primary-300",
+            "dsys.index": 2,
+            "dsys.styleId": "S:9d632ccb899c2229e5314f80fbd3cc435a1d879e,"
+          },
+          "$value": {
+            "hex": "#2938a4",
+            "alpha": 1
+          },
+          "$type": "color"
+        },
+        "Primary-400": {
+          "$extensions": {
+            "dsys.level": "token",
+            "dsys.name": "Primary-400",
+            "dsys.index": 3,
+            "dsys.styleId": "S:45361609eaf7c31b9da280dc28266efeec365bb8,"
+          },
+          "$value": {
+            "hex": "#4b5ac9",
+            "alpha": 1
+          },
+          "$type": "color"
+        },
+        "Primary-500": {
+          "$extensions": {
+            "dsys.level": "token",
+            "dsys.name": "Primary-500",
+            "dsys.index": 4,
+            "dsys.styleId": "S:a4a3cafdb17c11a9cadc31df95702d04c3c357d5,"
+          },
+          "$value": {
+            "hex": "#7785ed",
+            "alpha": 1
+          },
+          "$type": "color"
+        },
+        "Primary": {
+          "$extensions": {
+            "dsys.level": "token",
+            "dsys.name": "Primary",
+            "dsys.index": 5,
+            "dsys.styleId": "S:08fd00ff1ef1cf687caf24badcefccbf31b44ab7,"
+          },
+          "$value": {
+            "hex": "#7785ed",
+            "alpha": 1
+          },
+          "$type": "color"
+        },
+        "Primary-600": {
+          "$extensions": {
+            "dsys.level": "token",
+            "dsys.name": "Primary-600",
+            "dsys.index": 6,
+            "dsys.styleId": "S:4b82d5b67c8feca7cc49e294703be887d9341041,"
+          },
+          "$value": {
+            "hex": "#8b97f2",
+            "alpha": 1
+          },
+          "$type": "color"
+        },
+        "Primary-700": {
+          "$extensions": {
+            "dsys.level": "token",
+            "dsys.name": "Primary-700",
+            "dsys.index": 7,
+            "dsys.styleId": "S:7a475c99ef215c191767222296a3c7e8320eedea,"
+          },
+          "$value": {
+            "hex": "#a0aaf6",
+            "alpha": 1
+          },
+          "$type": "color"
+        },
+        "Primary-800": {
+          "$extensions": {
+            "dsys.level": "token",
+            "dsys.name": "Primary-800",
+            "dsys.index": 8,
+            "dsys.styleId": "S:a39e598a2267ef03b28a4e0f6ef6df002b1f9999,"
+          },
+          "$value": {
+            "hex": "#b6befb",
+            "alpha": 1
+          },
+          "$type": "color"
+        },
+        "Primary-900": {
+          "$extensions": {
+            "dsys.level": "token",
+            "dsys.name": "Primary-900",
+            "dsys.index": 9,
+            "dsys.styleId": "S:9d7755b92573b4f63a0b72f290329f8506c3eff1,"
+          },
+          "$value": {
+            "hex": "#ccd2ff",
+            "alpha": 1
+          },
+          "$type": "color"
+        }
+      }
+    }
+  }
+}
